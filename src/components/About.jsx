@@ -1,6 +1,9 @@
 import React from 'react';
 import './About.css';
 
+
+
+
 function About() {
   return (
     <section id="about">
@@ -26,7 +29,7 @@ function About() {
             Tech. Skilled in problem-solving and equipped with a diverse skill
             set including C++, Python, HTML, CSS, and JavaScript.
           </p>
-          <a href="/cv/ANAS_CV (2).pdf" target="_blank">
+          <a href="/ANAS-Hassan.pdf" target="_blank">
             <button className="btn">View Resume</button>
           </a>
         </div>

@@ -1,9 +1,6 @@
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Projects.css'; // ربط CSS الخاص بالمشاريع
 
 function Projects() {
   const [repositories, setRepositories] = useState([]);
@@ -12,28 +9,23 @@ function Projects() {
   const [filteredProjects, setFilteredProjects] = useState([]);
 
   useEffect(() => {
-    const token = ''; // استبدل هذا بالتوكين الجديد
-    const username = ''; // اسم المستخدم الخاص بك
+    const token = process.env.REACT_APP_GITHUB_TOKEN;
+    const username = 'ooo'; // اسم المستخدم الخاص بك
 
-    // طلب البيانات باستخدام التوكين الجديد مع fetch
-    axios.get(``, {
-      headers: {
-        Authorization: `Bearer ${token}`, // تمرير التوكين في رأس الطلب
-      }
-    })
+    axios
+      .get(`oooo`, {
+        headers: {
+          Authorization: `Bearer ${token}`, // تمرير التوكين في رأس الطلب
+        },
+      })
       .then((response) => {
         const repos = response.data;
-        const filteredRepos = [];
+        const filteredRepos = repos.filter((repo) =>
+          repo.name.toLowerCase().includes('project') // تصفية المشاريع التي تحتوي على كلمة "project" في الاسم
+        );
 
-        // تصفية المستودعات بناءً على اسم المشروع الذي يحتوي على "project"
-        for (const repo of repos) {
-          if (repo.name.toLowerCase().includes('project')) { // تصفية المشاريع التي تحتوي على "project" في اسمها
-            filteredRepos.push(repo); // أضف المشروع إلى القائمة
-          }
-        }
-
-        setFilteredProjects(filteredRepos); // تعيين المشاريع المصفاة
-        setLoading(false); // إيقاف حالة التحميل
+        setFilteredProjects(filteredRepos);
+        setLoading(false);
       })
       .catch((error) => {
         setError('Error fetching repositories.');
@@ -50,18 +42,29 @@ function Projects() {
   }
 
   return (
-    <section id="projects">
-      <div className="projects-header">
-        <h2>Projects with "Project" in the Name</h2>
+    <section id="services1">
+      <div className="part_1">
+        <h2>My GitHub Projects</h2>
       </div>
-      <div className="projects-list">
+      <div className="part_2">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((repo) => (
-            <div key={repo.id} className="project-box">
+            <div key={repo.id} className="box">
+              {/* إضافة رمز لكل مشروع */}
+              <img
+                src={`0000`}
+                alt={repo.name}
+                className="project-image"
+              />
               <h4>{repo.name}</h4>
               <p>{repo.description || 'No description available.'}</p>
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                <button className="btn">View on GitHub</button>
+              <a
+                href={repo.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
+                View on GitHub
               </a>
             </div>
           ))
@@ -74,4 +77,3 @@ function Projects() {
 }
 
 export default Projects;
-

@@ -40,4 +40,78 @@
   }
   
 
+  /* :root {
+    /* ألوان الوضع الداكن *
+    --theme-color-light: limegreen;
+    --theme-color-dark: lime;
+    --body-bg-1: #121212;  /* الخلفية الداكنة *
+    --body-bg-2: #1c2841;  /* خلفية الأجزاء الثانوية في الصفحة *
+    --text-white: #fafafa;  /* النص الأبيض *
+    --text-dark: #e0e0e0;  /* النص الرمادي الداكن *
+    --button-bg-light: #333;  /* خلفية الأزرار في الوضع الداكن *
+    --button-bg-dark: #444;  /* خلفية الأزرار في الوضع الفاتح *
+    --box-shadow: 15px 20px 15px rgb(0, 128, 0, 30%);
+  }
   
+  /* وضع الوضع المظلم *
+  [data-theme="dark"] {
+    --body-bg: var(--body-bg-1); /* تعيين خلفية الصفحة في الوضع الداكن *
+    --text-color: var(--text-white);  /* النص في الوضع المظلم *
+    --button-bg: var(--button-bg-light);  /* زر في الوضع المظلم *
+  }
+  
+  /* وضع الوضع الفاتح *
+  [data-theme="light"] {
+    --body-bg: var(--body-bg-2); /* تعيين خلفية الصفحة في الوضع الفاتح *
+    --text-color: var(--text-dark);  /* النص في الوضع الفاتح *
+    --button-bg: var(--button-bg-dark);  /* زر في الوضع الفاتح *
+  }
+  
+  body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #header {
+    background-color: #222;  /* الهيدر في الوضع المظلم *
+    color: var(--text-color);
+  }
+  
+  #menu li a {
+    color: var(--text-color);
+  }
+  
+  #menu li a:hover {
+    color: var(--theme-color-dark);
+  }
+  
+  #section_1 {
+    background-color: var(--body-bg-2);  /* خلفية القسم *
+  }
+  
+  #services1 .part_2 .box {
+    background: #333;
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+  }
+  
+  #services1 .part_2 .box:hover {
+    background-color: var(--theme-color-dark);
+    color: #000;
+    box-shadow: var(--box-shadow);
+  }
+  
+  #footer {
+    background-color: #121212;
+    color: var(--text-color);
+    padding: 1rem 5rem;
+  }
+  
+  #footer h2 i {
+    color: limegreen;
+  } */
