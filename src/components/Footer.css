@@ -1,0 +1,17 @@
+/*Footer section*/
+#footer {
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: #121212;
+    position: relative;
+    text-align: center;
+  }
+  #footer h2 {
+    font-size: 18px;
+  }
+  #footer p {
+    font-size: 10px;
+  }
+  #footer h2 i {
+    color: limegreen;
+  }

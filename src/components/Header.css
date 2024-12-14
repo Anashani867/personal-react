@@ -1,0 +1,83 @@
+/* Section_1 Part */
+#section_1 {
+  min-height: 700px;/*طول والتب*/
+  width: 930px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-white);
+}
+#section_1 .part_1 {
+  margin-right: auto;
+  flex-basis: 50%;/*طولة*/
+  width: 400px;
+  height: 400px;
+  text-align: left;
+}
+#section_1 .part_1 img {
+  width: 100%;
+  height: 100%;
+  margin-left: -10%;
+}
+#section_1 .part_2 {
+  padding: 5rem 2rem 2rem 0rem;
+  flex-basis: 45% ;/*طول الكتابة*/
+  height: 500px;/*المسافة من الاسفل*/
+  margin-right: auto;
+}
+#section_1 .part_2 p:nth-child(1) {
+  margin-top: 5rem;
+}
+#section_1 .part_2 p {/*الخط*/
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+#visitor {/*لون الخط*/
+  color: var(--theme-color-dark);
+  font-weight: 700;/*غمق الخط*/
+}
+
+#section_1 .part_2  {
+  width: 100%;
+  font-size: 25px;/*الحجم س*/
+  font-weight: 700;/*حجم الخط*/
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.btn {
+  border: 1px solid var(--theme-color-dark);
+  border-radius: 10px;
+  background-color: var(--body-bg-1);
+  color: var(--text-white);
+  padding: 0.5rem 3rem;
+  font-size: 20px;
+  transition: 0.2s linear;
+  cursor: pointer;
+  position: relative;
+}
+.btn:hover {
+  color: black;
+  background-color: var(--theme-color-light);
+}
+
+#section_1 .btn {
+  margin-top: 2rem;/*المسافة بين الكتابة*/
+
+}
+
+#down {
+  transition: 0.2s linear;/*التاخير*/
+
+}
+
+
+.btn:hover #down {
+  position: relative;
+  animation: down 1s infinite;
+}

@@ -1,0 +1,43 @@
+:root {
+    --theme-color-light: limegreen;
+    --theme-color-dark: lime;
+    --body-bg-1: #121212;
+    --body-bg-2: #1c2841;
+  
+    --text-white: #fafafa;
+    --box-shadow: 15px 20px 15px rgb(0, 128, 0, 30%);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-color-dark);
+  }
+  
+  body {
+    background: var(--body-bg-1);
+    color: var(--text-white);
+  }
+  
+
+  

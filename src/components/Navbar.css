@@ -1,0 +1,47 @@
+/* Header Part */
+#header {
+    position: fixed;
+      width: 100%;
+    padding: 1rem 2rem;
+    display: flex;/*logo*/
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    z-index: 9999;
+    transition: all 0.3s linear;
+    background-color: #000;
+  }
+  
+  #header .logo {
+    flex-basis: 400px;/* مسافة الوغو مع المنيوة*/
+  }
+  #header .logo h1 { /*حجم الوغو*/
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  #header .logo span {/*لون الوغوا*/
+    color: var(--theme-color-dark);
+  }
+  
+  #menu {/* كامل منيوة*/
+    display: flex;
+    align-items: center;
+  }
+  #menu li {
+    padding: 0 0.5rem;
+    list-style-type: none;
+  
+  }
+  #menu li a {
+    text-decoration: none;
+    color: var(--text-white);/*لون الخط*/
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.2s ease-in-out;/* تأخير بسيط*/
+  }
+  #menu li a:hover {
+    color: var(--theme-color-dark);
+    font-size: 15px;/*تتحكم في الكبسة عشان تصغر*/
+  }

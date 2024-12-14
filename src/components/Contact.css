@@ -1,0 +1,106 @@
+
+/* Contact Part */
+#contact {
+    padding: 5rem 2rem;
+    background-color: var(--body-bg-2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #contact .part_1 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+  }
+  #contact .part_1 h2:after {
+    content: "- get in touch -";
+    font-size: 15px;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    color: var(--theme-color-dark);
+  }
+  #contact .part_2 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+  #contact .part_2 .info {
+    flex-basis: 500px;
+    width: 700px;
+    position: relative;
+  }
+  #contact .part_2 .info h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #contact .part_2 .info p {
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  #contact .part_2 .info ul {
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 0rem;
+  }
+  #contact .part_2 .info ul li {
+    list-style-type: none;
+    padding: 1rem 1rem 1rem 0rem;
+  }
+  
+  #contact .part_2 .info ul li i {
+    float: left;
+    margin-right: 30px;
+    margin-top: 5px;
+  }
+  #contact .part_2 .info ul li p {
+    margin-top: 2px;
+    margin-left: 2.5rem;
+  }
+  
+  #contact .part_2 .contact_form {
+    flex-basis: 320px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: all linear 0.5s;
+  }
+  
+  .contact_form:hover {
+    box-shadow: 15px 20px 15px rgb(0, 128, 0, 30%);
+  }
+  
+  .cform {
+    margin-top: 15px;
+  }
+  
+  .c_box {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .c_box .icon {
+    width: 70px;
+  }
+  .icon img {
+    width: 100%;
+  }
+  .icon:nth-child(2) {
+    width: 40px;
+  }
+  .icon:nth-child(3) img {
+    width: 80%;
+  }
+  #section_7 {
+    margin-top: 25px;
+  }
+  
